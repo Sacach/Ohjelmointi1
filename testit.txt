@@ -1,0 +1,47 @@
+Syöte               Tulostus
+                    Anna kortin numero:
+123456              Kyseistõ tiliõ ei l÷ydy. Yritõ uudelleen
+abcd                Kyseistõ tiliõ ei l÷ydy. Yritõ uudelleen
+12345               Anna tunnusluku:
+asdf                Vaara pin-koodi Yrita uudelleen
+1234567             Vaara pin-koodi Yrita uudelleen
+1234                Valitse Otto(1), Saldo(2), Tapahtumat(3), Liittyman lataus(4) tai Stop(5)
+1                   Valitse 20, 40, 60, 90, 140, 240, Muu(-1), palaa(-2)
+90                  Rahat tulossa 90 euroa 1 kpl 50e seteliõ ja 2 kpl 20e seteliõ Valitse Kuitti(1), Naytolle(2), Ei kiitos(3)
+1                   Ota rahat Valitse Otto(1), Saldo(2), Tapahtumat(3), Liittyman lataus(4) tai Stop(5)
+1                   Valitse 20, 40, 60, 90, 140, 240, Muu(-1), palaa(-2)
+-2                  Valitse Otto(1), Saldo(2), Tapahtumat(3), Liittyman lataus(4) tai Stop(5)
+1                   Valitse 20, 40, 60, 90, 140, 240, Muu(-1), palaa(-2)
+-1                  Anna summa
+67                  Kyseistõ nostosummaa ei voi jakaa 50 euron ja 20 euron seteleihin Anna uusi nostosumma
+kolme               virheellinen syote
+480                 Rahat tulossa 480 euroa 8 kpl 50e seteliõ ja 4 kpl 20e seteliõ Valitse Kuitti(1), Naytolle(2), Ei kiitos(3)
+2                   Ota rahat Valitse Otto(1), Saldo(2), Tapahtumat(3), Liittyman lataus(4) tai Stop(5)
+1                   Valitse 20, 40, 60, 90, 140, 240, Muu(-1), palaa(-2)
+-1                  Anna summa
+-400                Rahat tulossa -400 euroa -8 kpl 50e seteliõ ja 0 kpl 20e seteliõ Valitse Kuitti(1), Naytolle(2), Ei kiitos(3)
+anna kuitti         virheellinen syote
+-123                Ota rahat Valitse Otto(1), Saldo(2), Tapahtumat(3), Liittyman lataus(4) tai Stop(5)
+2                   Saldo: -190.10 euroa lopeta(anna jokin syote)
+abc                 Valitse Otto(1), Saldo(2), Tapahtumat(3), Liittyman lataus(4) tai Stop(5)
+3                   Valitse Naytolle(1), Kuitille(2)
+kuitti              virheellinen syote
+123                 Tapahtumat: 300 euroa      matkapuhelin 30 euroa       liittyman lataus Valitse Otto(1), Saldo(2), Tapahtumat(3), Liittyman lataus(4) tai Stop(5)
+4                   Valitse Alkuun(1), Saunalahti(2), dna Go mobile(3)
+1                   Valitse Otto(1), Saldo(2), Tapahtumat(3), Liittyman lataus(4) tai Stop(5)
+4                   Valitse Alkuun(1), Saunalahti(2), dna Go mobile(3)
+1234                Anna puh.numero ja paina enter
+-1234               Anna summa tai palaa alkuun(-1)
+-1                  Valitse Otto(1), Saldo(2), Tapahtumat(3), Liittyman lataus(4) tai Stop(5)    
+4                   Valitse Alkuun(1), Saunalahti(2), dna Go mobile(3)
+asdf                virheellinen syote
+2                   Anna puh.numero ja paina enter
+puhelin             virheellinen syote
+1234                Anna summa tai palaa alkuun(-1)
+-12                 toiminto keskeytetty Valitse Otto(1), Saldo(2), Tapahtumat(3), Liittyman lataus(4) tai Stop(5)
+4                   Valitse Alkuun(1), Saunalahti(2), dna Go mobile(3)
+3                   Anna puh.numero ja paina enter
+123                 Anna summa tai palaa alkuun(-1)
+123                 maksu suoritettu vahvistus tekstiviestilla Valitse Otto(1), Saldo(2), Tapahtumat(3), Liittyman lataus(4) tai Stop(5)
+qwerty              virheellinen syote
+5                   Kiitos kaynnista Ota kortti

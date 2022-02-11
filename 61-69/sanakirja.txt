@@ -1,0 +1,10 @@
+sana1suomeksi;sana1englanniksi
+sana2suomeksi;sana2englanniksi
+sana3suomeksi;sana3englanniksi
+sana4suomeksi;sana4englanniksi
+sana5suomeksi;sana5englanniksi
+sana6suomeksi;sana6englanniksi
+sana7suomeksi;sana7englanniksi
+sana8suomeksi;sana8englanniksi
+sana9suomeksi;sana9englanniksi
+sana10suomeksi;sana10englanniksi

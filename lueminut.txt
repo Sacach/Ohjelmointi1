@@ -1,0 +1,74 @@
+1. 
+Ohjelman tarkoituksena on toimia kuten pankkiautomaatti 
+siten, että siinä on 4 eri toimintoa: otto, saldon tarkastelu, 
+tapahtumien tarkastelu ja matkapuhelinliittymän saldon lataus. 
+Automaatti tulostaa rahat kuten oikeat automaatitkin 
+eli 50 ja 20 euron seteleissä mahdollisimman suurina seteleinä.
+
+2. 
+Ohjelma on jaettu funktioihin siten, että lähes jokainen toiminto 
+on omassa funktiossaan. Sen lisäksi kokonaisluvun lukeminen, kirjautuminen, 
+rahojen lasku algoritmi ja päälooppi, josta siirrytään toimintoihin 
+on jaettu omiin funktioihinsa.
+Funktiot                Toiminta
+
+kirjaudu                Ensimmäinen ohjelman looppi, joka päättyy, 
+                        kun käyttäjä on syöttänyt oikean kortinnumeron sekä
+                        kortinnumeron mukaisesta tiedostosta löytyvän pin-koodin.
+                        Kun kirjautuminen on suoritettu funktio vielä lukee 
+                        globaaliin muuttujaan Saldo tiedostosta löytyvän saldon määrän
+
+tyhjennapuskuri         tyhjentää näppäimistön syötteen puskurin, 
+                        jotta ohjelma ei hyppäisi syötteen pyytämisen yli
+
+lueint                  lukee kokonaisluvun ja palauttaa sen
+
+otto                    käsittelee otto valinnan: kysyy käyttäjältä ostettavan summan
+                        ja kutsuu rahojen_jako funktiota, jakamaan ja tulostamaan rahat
+
+liit_lataus             käsittelee liittymän latauksen: kysyy käyttäjältä liittymää,
+                        sekä ladattavaa summaa ja vähentää summan saldosta
+
+saldo                   Yksinkertainen looppi, joka näyttää saldon ja josta poistutaan 
+                        antamalla mikä tahansa ei tyhjä syöte
+
+mainloop                Ohjelman pääkäyttöliittymä, josta poistuttaessa ohjelma sulkeutuu.
+                        loopista päästään kaikkiin toimintoihin ja poistutaan vasta kun 
+                        käyttäjä antaa syötteen 5
+
+rahojen_jako            jakaa annetun rahasumman 50 ja 20 euron seteleihin switch-case 
+                        rakennetta hyödyntäen. Annetusta summasta otetaan jakojäännös 
+                        50 kanssa(ensimmäinen 50 vähentäminen ei olekkaan tarpeellinen,
+                        unohdin miksi sen siihen alunperin laitoin ja nyt huomasin 
+                        ettei se olekkaan tarpeellinen, myös default casen voisi 
+                        vaihtaa sisältämään pelkästään sen, mitä sen else lausekkeen 
+                        sisällä on). Jakojäännöksestä päätellään kuinka rahat täytyy jakaa:
+                        0, summa voidaan tulostaa täysin 50 seteleinä
+                        10, summa täytyy tulostaa 3x20 vaille 50 seteleinä
+                        20, summa täytyy tulostaa 1x20 vaille 50 seteleinä
+                        30, summa täytyy tulostaa 4x20 vaille 50 seteleinä
+                        kaikki muut, ei voida tulostaa 50 ja 20 seteleinä
+                        Lopuksi vielä tulostetaan rahat ja muutetaan saldoa 
+                        nostetun summan verran
+
+3.
+Ohjelman saa käynnistettyä esim code::blocksin kautta painamalla build and run nappia
+Ohjelma pyytää aluksi syöttämään kortinnumeron, (koneella pitäisi olla nimen omaava 
+tekstitiedosto, josta löytyy ensimmäiseltä riviltä jokin numero joka luetaan pin-koodiksi 
+ja toiselta riviltä numero, joka luetaan tilin saldoksi) kortinnumeron, sekä tunnusluvun
+tulisivat olla enintään 255 merkkiä pitkiä. Kun oikea numero ja pin-koodi on syötetty
+ohjelma antaa vaihtoehdot, jolloin annetaan syötteenä halutun toiminnon perässä näkyvä numero
+ohjelma ilmoittaa, jos syöte on virheellinen, jonka jälkeen käyttäjä yrittää uudelleen kelvollisen
+syötteen antamista.
+Otto valinnassa voidaan syöttää jokin annetuista numeroista, tai syötää jokin omavalintainen summa
+omavalintainen summa voi kuitenkin olla korkeintaan 1000 euroa, jos syöte on virheellinen,
+ohjelma tulostaa ilmoituksen siitä.
+Liittymän lataus toimii pitkälti samoin kuin otto, summan suuruutta tosin ei ole rajoitettu.
+Saldon tarkastelusta poistuaan antamalla mikä tahansa ei tyhjä syöte.
+
+
+4.
+Tiedoston lukeminen ei meinannut aluksi onnistua, koska siitä minulla ollut paljoa aikaisempaa 
+c-kielen kokemusta. Luentodioista ja pienellä googlaamisella apu löytyi kuitenkin helposti.
+Rahojen jako algoritmistä tuli paljon yksikertaisempi kuin odotin.
+
